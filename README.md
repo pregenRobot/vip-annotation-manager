@@ -1,57 +1,70 @@
-# vip-annotation-manager
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
+## Available Scripts
 
-This is the repository for managing the GUI client for connecting to the annotation management database for the  VIP Dolphin Acoustics Program
+In the project directory, you can run:
 
-## Setting Up
+### `npm start`
 
-You will need to setup a node environment for building the electron app.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Detailed installation instructions will not be stated here but please refer to [the nodejs website](https://nodejs.org/en/download/) for any issues.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### MacOS/Linux
+### `npm test`
 
-#### Install nodejs server
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-`brew install node`  // Or using your favorite package manager
+### `npm run build`
 
-#### Install dependencies 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-`npm install {package}` but replace `{package}` with the following dependencies (should be stated in tsconfig.json as well if this README.md is not updated)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- electron
-- typescript
-- tsc
-- react
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-`npm install --save-dev {package}` but replace `{package}` with the following dependencies 
+### `npm run eject`
 
-- @electron-forge/cli
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-#### Building the project
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Compiling typescript into javascript
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-`tsc`
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Running the app for testing purposes
+## Learn More
 
-`npm start`
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Packaging up the app for deployment
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-`npx elecgtron-forge import`
+### Code Splitting
 
-`npm run make`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Your final app should be inside the "out" directory that will be generated
+### Analyzing the Bundle Size
 
-## Further reading
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Please refer to the [quick-start guide](https://www.electronjs.org/docs/tutorial/quick-start) to get a crash course of what developing an electron app looks like.
-Will help alieve some of the stress if you have never worked on an electron app before :)
+### Making a Progressive Web App
 
-Using typscript for this project because we are dealing with data and sql servers so type checking will be extremely useful.
-The [typescript documentation](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) will give you a rough overview of this language and its relationship with javascript.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
