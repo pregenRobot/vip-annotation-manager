@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=\"development\" webpack --progress",
     "serve": "electron .",
-    "compile": "npm run build && electron-builder -c.extraMetadata.main=dist/main.js"
+    "make": "npm run build && electron-builder -c.extraMetadata.main=dist/main.js"
   },
   "repository": {
     "type": "git",
