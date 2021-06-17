@@ -1,7 +1,8 @@
 import os from 'os';
 import path from 'path';
 import { app, BrowserWindow, session } from 'electron';
-
+import {ipcMain} from "electron"
+import {OSDocument} from "./native_components/folder_loader"
 
 const extPath =
   os.platform() === 'darwin'
@@ -11,9 +12,9 @@ const extPath =
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
     webPreferences: {
-      nodeIntegration: false,
       contextIsolation: true,
-      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      preload: path.join(__dirname, '/preload.js'),
     },
   });
 
@@ -45,3 +46,11 @@ app.whenReady().then(async () => {
 
 // すべてのウィンドウが閉じられたらアプリを終了する
 app.once('window-all-closed', () => app.quit());
+
+ipcMain.on("msg_render_to_main", (event, arg) => {
+  console.log(arg); //printing "good job"
+  // console.log(arg)
+  var os_document = new OSDocument(arg)
+  
+  // console.log(os_document.root_contents);
+});
